@@ -412,10 +412,7 @@ function App() {
               <div className='p-3 border border-black relative mt-4 md:mt-12'>
                 <h2 className="absolute -top-1/2 translate-y-1/2 bg-white text-gold-grey font-medium">Newsletter</h2>
                 <div className="flex whitespace-nowrap">
-                  <label htmlFor="subscription" className=" w-full" >
-                    <input type="text" placeholder="Enter Your Email Address" className="border-b border-b-black outline-none placeholder:text-[14px] text-[14px] text-gold-grey" />
-
-                  </label>
+                  <input type="text" placeholder="Enter Your Email Address" className="relative border-b border-b-black outline-none placeholder:text-[14px] text-[14px] text-gold-grey" />
                   <button className="text-black underline text-[14px] ml-3">SUBSCRIBE</button>
                 </div>
               </div>
