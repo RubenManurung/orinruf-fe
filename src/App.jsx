@@ -399,21 +399,34 @@ function App() {
             </ul>
           </div>
           <div className="mt-4">
-            <h2 className="text-gold-grey font-medium mb-2 md:mb-[55px]">Newsletter</h2>
-            <form onSubmit={(e) => e.preventDefault()} className="flex w-full">
+
+            <form onSubmit={(e) => e.preventDefault()} className="hidden md:flex w-full">
               <label htmlFor="subscription" >
                 <input type="text" placeholder="Enter Your Email Address" className="border-b border-b-black outline-none placeholder:text-[14px] text-[14px] text-gold-grey" />
 
               </label>
               <button className="text-black underline text-[14px] ml-3">SUBSCRIBE</button>
             </form>
+
+            <form onSubmit={(e) => e.preventDefault()} className="flex w-full md:hidden">
+              <div className='p-3 border border-black relative mt-4 md:mt-12'>
+                <h2 className="absolute -top-1/2 translate-y-1/2 bg-white text-gold-grey font-medium">Newsletter</h2>
+                <label htmlFor="subscription" >
+                  <input type="text" placeholder="Enter Your Email Address" className="border-b border-b-black outline-none placeholder:text-[14px] text-[14px] text-gold-grey" />
+
+                </label>
+                <button className="text-black underline text-[14px] ml-3">SUBSCRIBE</button>
+              </div>
+            </form>
+
+
           </div>
         </div>
         <hr className="mb-[35px] mt-2 md:mt-[48px]" />
         <div>
           <p className="text-sm md:text-base font-semibold text-center md:text-start">2024 Mebelo. All rights reserved</p>
         </div>
-      </footer>
+      </footer >
     </>
   )
 }
