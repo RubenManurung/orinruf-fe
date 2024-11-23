@@ -400,8 +400,8 @@ function App() {
           </div>
           <div className="mt-4">
             <h2 className="text-gold-grey font-medium mb-2 md:mb-[55px]">Newsletter</h2>
-            <form onSubmit={(e) => e.preventDefault()}>
-              <label htmlFor="subscription">
+            <form onSubmit={(e) => e.preventDefault()} className="flex w-full">
+              <label htmlFor="subscription" >
                 <input type="text" placeholder="Enter Your Email Address" className="border-b border-b-black outline-none placeholder:text-[14px] text-[14px] text-gold-grey" />
 
               </label>
