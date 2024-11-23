@@ -116,7 +116,7 @@ function App() {
             <li className="font-semibold"><a href="#contact" >Contact</a></li>
           </ul>
 
-          <aside className={`${hamburgerToggle ? "h-screen top-0 " : "h-0 top-[-13rem]"} fixed transition-all w-screen bg-white py-[0px] px-4 right-0`}>
+          <aside className={`${hamburgerToggle ? "h-screen top-0 " : "h-0 top-[-13rem]"} fixed transition-all duration-300 w-screen bg-white py-[0px] px-4 right-0`}>
             <div className="flex justify-between">
               <div className="flex justify-between items-center w-full">
                 <div className="flex items-center justify-center">
@@ -138,12 +138,12 @@ function App() {
 
           </aside>
         </nav>
-        <div className="flex gap-x-[45px] lg:ml-[45px] items-center my-2 md:my-0">
-          <Icon icon="iconamoon:profile" className="w-[24px] md:w-[28px]" />
+        <div className="flex gap-x-[45px] lg:ml-[45px] items-center my-2 md:my-0 md:hidden lg:flex">
+          <Icon icon="iconamoon:profile" className="w-[28px] " />
 
-          <Icon icon="ri:search-line" className="w-[24px] md:w-[28px]" />
-          <Icon icon="mdi:heart-outline" className="w-[24px] md:w-[28px]" />
-          <Icon icon="mdi:cart-outline" className="w-[24px] md:w-[28px]" />
+          <Icon icon="ri:search-line" className="w-[28px] " />
+          <Icon icon="mdi:heart-outline" className="w-[28px] " />
+          <Icon icon="mdi:cart-outline" className="w-[28px] " />
         </div>
       </header>
 
@@ -315,11 +315,12 @@ function App() {
                     <>
                       <div className="relative border overflow-hidden border-[2px] rounded-md md:rounded-0 ">
                         {isActive && (
-                          <div className="block absolute bottom-0 z-50 p-[32px] ml-6 mb-6 bg-white/70">
+                          <div className="block absolute bottom-0 z-50 p-4 md:p-[32px] ml-9 md:ml-6 mb-6 bg-white/70">
                             <div className="flex justify-between mb-2">
-                              <span className="flex text-xs md:text-base relative font-medium text-kettlemen after:font-medium after:bg-kettlemen justify-between after:content[''] after:h-[1px] after:w-[30px] after:bg-black after:relative after:top-[50%] after:left-[25%] md:after:left-[50%]">
+                              <span className="flex text-xs md:text-base relative font-medium text-kettlemen ">
                                 01
                               </span>
+                              <div className=" content[''] h-[1px] w-[30px] bg-black relative flex items-center justify-center relative top-[8px] mx-1"></div>
                               <span className="text-kettlemen text-xs md:text-base flex justify-between font-medium">{product.title}</span>
                             </div>
                             <h3
@@ -327,7 +328,7 @@ function App() {
                             >
                               Inner Peace
                             </h3>
-                            <button className="bg-distilled-rose flex items-center absolute block mr-[-48px] mt-[-16px] right-0 p-3">
+                            <button className="bg-distilled-rose md:flex hidden items-center absolute block mr-[-48px] mt-[-16px] right-0 p-3">
                               <Icon icon="si:arrow-right-line" width="24" height="24" className="text-white" />
                             </button>
                           </div>)}
