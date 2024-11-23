@@ -410,7 +410,7 @@ function App() {
 
             <form onSubmit={(e) => e.preventDefault()} className="flex w-full md:hidden">
               <div className='p-3 border border-black relative mt-4 md:mt-12 w-full'>
-                <h2 className="absolute -top-1/2 translate-y-1/2 bg-white text-gold-grey font-medium">Newsletter</h2>
+                <h2 className="absolute -top-[35%] translate-y-1/2 bg-white text-gold-grey font-medium">Newsletter</h2>
                 <div className="flex flex-col justify-start items-start w-full">
                   <input type="text" placeholder="Enter Your Email Address" className="w-full relative border-b border-b-black outline-none placeholder:text-[14px] text-[14px] text-gold-grey" />
                   <button className="text-black underline text-[14px] md:ml-3 mt-2">SUBSCRIBE</button>
